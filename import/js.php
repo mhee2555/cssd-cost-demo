@@ -1,0 +1,10 @@
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
