@@ -1,4 +1,3 @@
-
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0  font-weight-bold" style="color: black;">ค่าเสื่อมราคาเครื่องจักร</h1>
 </div>
@@ -114,28 +113,30 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-2">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="txtSearch" placeholder="ค้นหาข้อมูล">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon3">วันที่</span>
-                            </div>
-                            <select class="form-control" id="selectSizeControl"></select>
-                        </div>
 
-                    </div>
                     <div class="col-2">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon3">Process</span>
+
                             </div>
-                            <select class="form-control" id="selectSizeControl"></select>
+
+
+                            <select class="form-control" id="selectSizeControl" onchange="getProcess();">
+                                <option value="0">Dirty Zone</option>
+                                <option value="1">Sterile Zone</option>
+                            </select>
                         </div>
                     </div>
+
+
+                    <div class="col-2 ml-auto ">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="txtSearch" placeholder="ค้นหาข้อมูล">
+                        </div>
+                    </div>
+
+
 
 
 
@@ -148,7 +149,7 @@
                                 <tr class="text-center">
                                     <th scope="col">ลำดับ</th>
                                     <th scope="col">ชื่อเครื่องจักร</th>
-                                    <th scope="col">ประเภท</th>
+
                                     <th scope="col">ราคา</th>
                                     <th scope="col">อายุการใช้งานที่เหลือ</th>
                                     <th scope="col">มูลค่าซาก</th>
@@ -159,7 +160,6 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Mark</td>
                                     <td>Mark</td>
                                     <td>Mark</td>
                                     <td>Otto</td>
@@ -173,7 +173,7 @@
                                     <td>Jacob</td>
                                     <td>Jacob</td>
                                     <td>Jacob</td>
-                                    <td>Thornton</td>
+
                                     <td>@fat</td>
                                     <th scope="row">1</th>
                                     <td><button class="btn btn-block " style="color:black;border-color: black;">ดูรายละเอียด</button></td>
@@ -182,7 +182,7 @@
                                 <tr>
                                     <th scope="row">3</th>
                                     <td>Larry</td>
-                                    <td>Larry</td>
+
                                     <td>Larry</td>
                                     <td>the Bird</td>
                                     <td>@twitter</td>
@@ -221,22 +221,19 @@
                 </div>
                 <div class="card-body">
                     <div class="row" style="font-weight: bold;">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="">กระบวนการ</label>
-                                <input type="text" class="form-control" id="" placeholder="กระบวนการ">
-                            </div>
-                        </div>
+                       
+
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="">ชื่อเครื่องจักร 1</label>
-                                <input type="text" class="form-control" id="" placeholder="ชื่อเครื่องจักร">
+                                <input type="text" class="form-control" id="" placeholder="ชื่อเครื่องจักร" readonly>
                             </div>
                         </div>
+
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="">ชื่อเครื่องจักร 2</label>
-                                <input type="text" class="form-control" id="" placeholder="ชื่อเครื่องจักร">
+                                <input type="text" class="form-control" id="" placeholder="ชื่อเครื่องจักร" readonly>
                             </div>
                         </div>
                         <div class="col-md-12">
