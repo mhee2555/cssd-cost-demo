@@ -26,7 +26,12 @@
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon3">Process</span>
             </div>
-            <select class="form-control" id="selectSizeControl"></select>
+          
+            <select class="form-control" id="selectSizeControl" onchange="getProcess();">
+                                <option value="0">Dirty Zone</option>
+                                <option value="1">Sterile Zone</option>
+                                <option value="2">Clean Zone</option>
+                            </select>
         </div>
     </div>
 
