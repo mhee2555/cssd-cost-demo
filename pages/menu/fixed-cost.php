@@ -4,18 +4,12 @@
 
 <div class="row">
     <div class="col-2">
-        <div class="form-group">
-            <input type="text" class="form-control" id="txtSearch" placeholder="ค้นหาข้อมูล">
-        </div>
-    </div>
-    <div class="col-2">
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon3">เดือน</span>
             </div>
             <select class="form-control" id="selectSizeControl"></select>
         </div>
-
     </div>
 
     <div class="col-2">
@@ -36,9 +30,13 @@
         </div>
     </div>
 
-
-
+    <div class="col-2 ml-auto">
+        <div class="form-group">
+            <input type="text" class="form-control" id="txtSearch" placeholder="ค้นหาข้อมูล">
+        </div>
+    </div>
 </div>
+
 
 
 <div class="row">
@@ -65,37 +63,43 @@
 
         </div>
     </div>
+
     <div class="col-9">
         <div class="card">
             <div class="card-body">
-                <div class="row">
-                    <div class="col-3 p-0">
-                        <button class="  btn-block btnClick_Fixed-cost" id="btnClick1">
-                            <span class="btnClick_Span1_Fixed-cost" id="spanClick1_text1">1</span>
-                            <span class="btnClick_Span2_Fixed-cost" id="spanClick1_text2">1 ครั้งต่อเดือน</span>
-                        </button>
-                    </div>
-                    <div class="col-3 p-0">
-                        <button class="  btn-block btnClick_No_Fixed-cost" id="btnClick2">
-                            <span class="btnClick_Span1_No_Fixed-cost" id="spanClick2_text1">2</span>
-                            <span class="btnClick_Span2_No_Fixed-cost" id="spanClick2_text2">1 ครั้งต่อสัปดาห์</span>
-                        </button>
-                    </div>
-                    <div class="col-3 p-0">
-                        <button class="  btn-block btnClick_No_Fixed-cost" id="btnClick3">
-                            <span class="btnClick_Span1_No_Fixed-cost" id="spanClick3_text1">3</span>
-                            <span class="btnClick_Span2_No_Fixed-cost" id="spanClick3_text2">1 ครั้งต่อวัน</span>
-                        </button>
-                    </div>
-                    <div class="col-3 p-0">
-                        <button class="  btn-block btnClick_No_Fixed-cost" id="btnClick4">
-                            <span class="btnClick_Span1_No_Fixed-cost" id="spanClick4_text1">4</span>
-                            <span class="btnClick_Span2_No_Fixed-cost" id="spanClick4_text2">ต้นทุนต่อรอบ</span>
-                        </button>
+                <div class="">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <button class="btn btn-block btnClick_Fixed-cost" id="btnClick1">
+                                        <span class="btnClick_Span1_Fixed-cost" id="spanClick1_text1">1</span>
+                                        <span class="btnClick_Span2_Fixed-cost" id="spanClick1_text2">1 ครั้งต่อเดือน</span>
+                                    </button>
+                                </div>
+                                <div class="card">
+                                    <button class="btn btn-block btnClick_No_Fixed-cost" id="btnClick2">
+                                        <span class="btnClick_Span1_No_Fixed-cost" id="spanClick2_text1">2</span>
+                                        <span class="btnClick_Span2_No_Fixed-cost" id="spanClick2_text2">1 ครั้งต่อสัปดาห์</span>
+                                    </button>
+                                </div>
+                                <div class="card">
+                                    <button class="btn btn-block btnClick_No_Fixed-cost" id="btnClick3">
+                                        <span class="btnClick_Span1_No_Fixed-cost" id="spanClick3_text1">3</span>
+                                        <span class="btnClick_Span2_No_Fixed-cost" id="spanClick3_text2">1 ครั้งต่อวัน</span>
+                                    </button>
+                                </div>
+                                <div class="card">
+                                    <button class="btn btn-block btnClick_No_Fixed-cost" id="btnClick4">
+                                        <span class="btnClick_Span1_No_Fixed-cost" id="spanClick4_text1">4</span>
+                                        <span class="btnClick_Span2_No_Fixed-cost" id="spanClick4_text2">ต้นทุนต่อรอบ</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="card mt-2">
             <div class="card-body">
@@ -124,7 +128,7 @@
                                     <td style="text-align: center;">1</td>
                                     <td><input type="text" class="form-control"></td>
                                     <td><input type="text" class="form-control"></td>
-                                    <td style="text-align: center;"><button class="btn">ล้าง</button> | <button class="btn">เพิ่ม</button></td>
+                                    <td style="text-align: center;"><button class="btn">ล้าง</button> | <button class="btn btn-primary ">เพิ่มต้นทุน</button></td>
                                 </tr>
                                 <tr>
                                     <td style="text-align: right;font-weight:bold;color:black;" colspan="2">รวม</td>
@@ -226,24 +230,38 @@
                                     </td>
                                     <td style="text-align: center;"><i class="far fa-edit"></i> <i class="fas fa-trash-alt" style="color:red;"></i></td>
                                 </tr>
+                                
                                 <tr>
                                     <td style="text-align: center;">1</td>
                                     <td><input type="text" class="form-control"></td>
                                     <td><input type="text" class="form-control"></td>
                                     <td><input type="text" class="form-control"></td>
-                                    <td style="text-align: center;"><button class="btn">ล้าง</button> | <button class="btn">เพิ่ม</button></td>
+                                    <td></td>
+                                    <td style="text-align: center;"><button class="btn">ล้าง</button> | <button class="btn btn-primary">เพิ่ม</button></td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: left;font-weight:bold;color:black;"  colspan="6"><button class="btn btn-primary">+ เพิ่มคอลัมน์</button></td>
+                                <td class="text-right" colspan="6"><button class="btn btn-primary ">+ เพิ่มคอลัมน์</button></td>
+
 
                                 </tr>
                                 <tr>
-                                    <td style="text-align: right;font-weight:bold;color:black;"  colspan="2">รวม</td>
+                                    <td style="text-align: right;font-weight:bold;color:black;" colspan="2">รวม</td>
                                     <td style="text-align: center;font-weight:bold;color:black;" colspan="2">300</td>
                                     <td style="text-align: center;font-weight:bold;color:black;" colspan="2">410 บาทต่อวัน</td>
+                                    
                                 </tr>
+                             
+
+
                             </tbody>
+                            
                         </table>
+                        <div class="d-flex mt-4">
+                                    <div class="ml-auto">
+                                        <button class="btn btn-primary">&larr; ย้อนกลับ</button>
+                                        <button class="btn btn-primary">ถัดไป &rarr;</button>
+                                    </div>
+                                </div>
                     </div>
                 </div>
             </div>
