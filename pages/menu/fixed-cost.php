@@ -12,26 +12,29 @@
         </div>
     </div>
 
+
     <div class="col-2">
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon3">ปี</span>
-            </div>
-            <select class="form-control" id="selectSizeControl"></select>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">ปี</span>
         </div>
+        <select class="form-control" id="selectYearControl"></select>
     </div>
+</div>
+
+    
 
     <div class="col-2">
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon3">Process</span>
             </div>
-          
+
             <select class="form-control" id="selectSizeControl" onchange="getProcess();">
-                                <option value="0">Dirty Zone</option>
-                                <option value="1">Sterile Zone</option>
-                                <option value="2">Clean Zone</option>
-                            </select>
+                <option value="0">Dirty Zone</option>
+                <option value="1">Sterile Zone</option>
+                <option value="2">Clean Zone</option>
+            </select>
         </div>
     </div>
 
@@ -235,7 +238,7 @@
                                     </td>
                                     <td style="text-align: center;"><i class="far fa-edit"></i> <i class="fas fa-trash-alt" style="color:red;"></i></td>
                                 </tr>
-                                
+
                                 <tr>
                                     <td style="text-align: center;">1</td>
                                     <td><input type="text" class="form-control"></td>
@@ -245,7 +248,7 @@
                                     <td style="text-align: center;"><button class="btn">ล้าง</button> | <button class="btn btn-primary">เพิ่ม</button></td>
                                 </tr>
                                 <tr>
-                                <td class="text-right" colspan="6"><button class="btn btn-primary ">+ เพิ่มคอลัมน์</button></td>
+                                    <td class="text-right" colspan="6"><button class="btn btn-primary ">+ เพิ่มคอลัมน์</button></td>
 
 
                                 </tr>
@@ -253,20 +256,20 @@
                                     <td style="text-align: right;font-weight:bold;color:black;" colspan="2">รวม</td>
                                     <td style="text-align: center;font-weight:bold;color:black;" colspan="2">300</td>
                                     <td style="text-align: center;font-weight:bold;color:black;" colspan="2">410 บาทต่อวัน</td>
-                                    
+
                                 </tr>
-                             
+
 
 
                             </tbody>
-                            
+
                         </table>
                         <div class="d-flex mt-4">
-                                    <div class="ml-auto">
-                                        <button class="btn btn-primary">&larr; ย้อนกลับ</button>
-                                        <button class="btn btn-primary">ถัดไป &rarr;</button>
-                                    </div>
-                                </div>
+                            <div class="ml-auto">
+                                <button class="btn btn-primary">&larr; ย้อนกลับ</button>
+                                <button class="btn btn-primary">ถัดไป &rarr;</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -274,3 +277,18 @@
         </div>
     </div>
 </div>
+
+<script>
+   
+    const months = ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"];
+
+    
+    const select = document.getElementById("selectSizeControl");
+
+    
+    for (let i = 0; i < months.length; i++) {
+        let option = document.createElement("option");
+        option.text = months[i];
+        select.add(option);
+    }
+</script>

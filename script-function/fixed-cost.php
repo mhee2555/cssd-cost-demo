@@ -57,7 +57,7 @@
         $("#btnClick2").click(function() {
             $("#textHeadChange").text('1 ครั้งต่อสัปดาห์');
 
-            
+
             $("#table_main1").attr('hidden', true);
             $("#table_main2").attr('hidden', false);
             $("#table_main3").attr('hidden', true);
@@ -200,5 +200,15 @@
             // ===============================================
         });
 
+    });
+
+    $(document).ready(function() {
+        var startYear = 2560;
+        var endYear = 2570;
+        var options = "";
+        for (var year = endYear; year >= startYear; year--) {
+            options += "<option value='" + year + "'>" + year + "</option>";
+        }
+        $("#selectYearControl").html(options);
     });
 </script>
