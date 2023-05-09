@@ -248,7 +248,8 @@
                                 <input type="text" class="form-control" id="" placeholder="ชื่อรุ่น">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <!-- <div></div> -->
+                        <div class="col-md-6"> 
                             <div class="form-group">
                                 <label for="">ชื่อยี่ห้อ</label>
                                 <input type="text" class="form-control" id="" placeholder="ชื่อยี่ห้อ">
